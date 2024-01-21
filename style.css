@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 0.75px;
+}
+h2{
+    font-size: 2.5vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+body{
+    color: white;
+    background-color: powderblue;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh;
+
+}
+#container{
+    background-color: white;
+    width: 90%;
+    max-width: 900px;
+    height: 500px; 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+
+}
+#upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 12.5%;
+    background-color: aqua;
+    padding: 0 10%;
+}
+
+
+
+#upper div{ 
+    width: 30%; 
+    display: flex;
+    justify-content: space-evenly;
+}
+.b1{
+    background-color: white;
+    width: 30%;
+    border-radius: 5px;
+    color: cyan;
+    text-align: center;
+}
+
+#bottom{ 
+    height: 87.5%;
+    background-color: rgb(255, 255, 255);
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    overflow: hidden;
+}
+.bubble{ 
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(27, 255, 255);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.bubble:hover{
+    background-color: rgb(20, 189, 189);
+}
+.w100{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+.w100 h2{
+    text-align: center;
+    width: 100%;
+}
+.tred{
+    color: rgb(252, 155, 155); 
+    transition: all 0.3s;
+}
+.tred:hover{
+    color: rgb(163, 41, 41);
+}
+.hide{
+    display: none;
+}
+button{
+    padding: 2vmax 7vmax;
+    border: none;
+    font-size: 2.3vmax;
+    color: cyan;
+    font-weight: bold;
+    background-color: white;
+    transition: all 0.2s;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.starter{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.starter h2{ 
+    border: 2px solid cyan ;
+    border-radius: 5px;
+    padding: 2vmax 5vmax;
+    margin: 15px 0;
+    color: rgb(42, 44, 165);
+}
+button:hover{
+    color: rgb(3, 143, 143);
+    background-color: azure;
+}
+
+
+@media (max-width: 700px){
+    h2{
+        font-size: 4vw;
+    }
+    #upper{ 
+    padding: 2% 5%;
+
+    }
+    #container{
+        height: 70vh;
+    }
+    .w100 h2{
+        font-size: 30px;
+    } 
+}
