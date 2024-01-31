@@ -103,7 +103,7 @@ button{
     padding: 2vmax 7vmax;
     border: none;
     font-size: 2.3vmax;
-    color: cyan;
+    color: rgb(0, 148, 148);
     font-weight: bold;
     background-color: white;
     transition: all 0.2s;
@@ -125,14 +125,15 @@ button{
     color: rgb(42, 44, 165);
 }
 button:hover{
-    color: rgb(3, 143, 143);
+    color: rgb(0, 109, 109);
     background-color: azure;
 }
 
 
 @media (max-width: 700px){
     h2{
-        font-size: 4vw;
+        font-size: 20px;
+        color: gold;
     }
     #upper{ 
     padding: 2% 5%;
